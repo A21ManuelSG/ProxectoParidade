@@ -54,7 +54,6 @@ public class ParMain {
      */
     private static int lerNumero(Scanner in) {
         System.out.println("Introduce un número: ");
-        int numeroProba=in.nextInt();
-        return numeroProba;
+        return in.nextInt();
     }
 }
