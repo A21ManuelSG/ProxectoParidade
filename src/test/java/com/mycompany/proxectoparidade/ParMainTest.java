@@ -6,16 +6,19 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
 
 /**
- *
+ * Proba unitaria da clase ParMain
  * @author Manuel
  */
 public class ParMainTest {
     
+    /**
+     * Constructor por defecto
+     */
     public ParMainTest() {
     }
 
     /**
-     * Test of main method, of class ParMain.
+     * Test of main method, of class ParMain
      */
     @Disabled
     @Test
@@ -28,7 +31,7 @@ public class ParMainTest {
     }
 
     /**
-     * Test of comprobarParidade method, of class ParMain.
+     * Test of comprobarParidade method, of class ParMain para o número 0
      */
     @Test
     public void testComprobarParidadeCero() {
@@ -39,6 +42,9 @@ public class ParMainTest {
         assertEquals(resultadoEsperado, resultado);
     }
     
+    /**
+     * Test do método ComporbarParidade para un número par positivo
+     */
     @Test
     public void testComprobarParidadeParPositivo() {
         System.out.println("comprobarParidadeParPositivo");
@@ -48,6 +54,9 @@ public class ParMainTest {
         assertEquals(resultadoEsperado, resultado);
     }
     
+    /**
+     * Test do método ComporbarParidade para un número impar positivo
+     */
     @Test
     public void testComprobarParidadeImparPositivo() {
         System.out.println("comprobarParidadeImparPositivo");
@@ -57,6 +66,9 @@ public class ParMainTest {
         assertEquals(resultadoEsperado, resultado);
     }
     
+    /**
+     * Test do método ComporbarParidade para un número par negativo
+     */
     @Test
     public void testComprobarParidadeParNegativo() {
         System.out.println("comprobarParidadeParNegativo");
@@ -66,6 +78,9 @@ public class ParMainTest {
         assertEquals(resultadoEsperado, resultado);
     }
     
+    /**
+     * Test do método ComporbarParidade para un número impar negativo
+     */
     @Test
     public void testComprobarParidadeImparNegativo() {
         System.out.println("comprobarParidadeImparNegativo");
@@ -76,7 +91,7 @@ public class ParMainTest {
     }  
 
     /**
-     * Test of verificaPar method, of class ParMain.
+     * Test of verificaPar method, of class ParMain para o número 0
      */
     @Test
     public void testVerificaParCero() {
@@ -85,6 +100,9 @@ public class ParMainTest {
         assertTrue(ParMain.verificaPar(numeroProba));
     }
     
+    /**
+     * Test do VerificaPar para un número par
+     */
     @Test
     public void testVerificaParNumPar() {
         System.out.println("verificaParNumPar");
@@ -92,6 +110,9 @@ public class ParMainTest {
         assertTrue(ParMain.verificaPar(numeroProba));
     }
     
+    /**
+     * Test do VerificaPar para un número impar 
+     */
     @Test
     public void testVerificaParNumImpar() {
         System.out.println("verificaParNumImpar");
